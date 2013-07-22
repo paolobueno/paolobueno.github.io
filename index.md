@@ -3,13 +3,12 @@ layout: page
 title: paolobueno's blog
 tagline: One step at a time
 ---
-{% include JB/setup %}
 
-Hello, welcome to my blog!
+Olá, bem-vindo ao meu blog!
 
-Here I talk about programming, my ongoing projects, and sometimes project management.
+Aqui eu falo sobre programação, meus projetos atuais e de vez em quando sobre gerenciamento de projetos.
 
-You can access the list of posts so far below or on the [Archive]({{ BASE_PATH }}{{ site.JB.archive_path }})
+Você pode acessar a lista de posts atual abaixo ou no [Archive]({{ BASE_PATH }}{{ site.JB.archive_path }})
 
 <ul class="posts">
   {% for post in site.posts %}

@@ -15,7 +15,7 @@ author :
   name : Paolo Bueno
   email : paolohaji@gmail.com
   github : paolobueno
-  twitter : username
+  twitter : PaoloBueno
   feedburner : paolohaji@gmail.com
 
 # The production_url is only used when full-domain names are needed
@@ -101,7 +101,7 @@ JB :
   analytics :
     provider : google 
     google : 
-        tracking_id : 'UA-123-12'
+        tracking_id : 'UA-42610537-1'
     getclicky :
       site_id : 
     mixpanel :
