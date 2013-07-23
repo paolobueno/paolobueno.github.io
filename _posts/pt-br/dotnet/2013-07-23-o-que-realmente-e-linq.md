@@ -118,7 +118,7 @@ public void QuerySyntaxWorksByDuckTyping()
 }
 {% endhighlight %}
 
-Não se preocupe em entender o parâmetro <span class="highlight"><code class="csharp">{% highlight csharp nowrap %}Func<int, bool> filter{% endhighlight %}</code></span>&nbsp;por enquanto, abordaremos melhor como implementar nossos próprios métodos em outro post. O importante é perceber que de fato o compilador simplesmente gerou uma chamada equivalente a <span class="highlight"><code class="csharp">{% highlight csharp nowrap %}fooler.Where(i => i < 4){% endhighlight %}</code></span>, o que resolveu para o método `LinqFooler#Where`.
+Não se preocupe em entender o parâmetro <span class="highlight"><code class="csharp">{% highlight csharp nowrap %}Func<int, bool> filter{% endhighlight %}</code></span>&nbsp;por enquanto, abordaremos melhor como implementar nossos próprios métodos em outro post. O importante é perceber que de fato o compilador simplesmente gerou uma chamada equivalente a <span class="highlight"><code class="csharp">{% highlight csharp nowrap %}fooler.Where(i => i < 4){% endhighlight %}</code></span>, que resolveu para o método `LinqFooler#Where`.
 
 Isso é comum em linguagens fracamente tipadas e é chamado *duck typing*, que é o polimorfismo resultante da resolução da chamada de métodos baseado somente em seus nomes e assinaturas, sem a necessidade de herdar de uma mesma classe base ou implementar uma mesma interface, como é o caso do **C#**.
 
