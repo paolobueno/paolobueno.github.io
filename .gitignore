@@ -1,1 +1,5 @@
 _site/*
+sources/LINQ/bin/
+sources/LINQ/obj/
+*.suo
+
