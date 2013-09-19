@@ -9,8 +9,8 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : paolobueno's blog
-tagline: under construction
+title : Paolo Bueno
+tagline: *-developer
 author :
   name : Paolo Bueno
   email : paolohaji@gmail.com
