@@ -1,6 +1,5 @@
 import React from 'react'
 import Helmet from "react-helmet"
-import { prefixLink } from 'gatsby-helpers'
 import { GoogleFont, TypographyStyle } from 'react-typography'
 import typography from './utils/typography'
 
@@ -37,7 +36,7 @@ module.exports = React.createClass({
         </head>
         <body>
           <div id="react-mount" dangerouslySetInnerHTML={{ __html: body }} />
-          <script src={prefixLink(`/bundle.js?t=${BUILD_TIME}`)} />
+          <script src={`/bundle.js?t=${BUILD_TIME}`} />
         </body>
       </html>
     )
