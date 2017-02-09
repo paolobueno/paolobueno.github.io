@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+ <html lang="en"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title data-react-helmet="true">LINQ - O que realmente é | PB</title><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75em Merriweather,Georgia,serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:Merriweather,Georgia,serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:3.5rem;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Merriweather,Georgia,serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:2.625rem;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Merriweather,Georgia,serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.75rem;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Merriweather,Georgia,serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.75rem;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Merriweather,Georgia,serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.75rem;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Merriweather,Georgia,serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.75rem;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:tnum;-moz-font-feature-settings:tnum;-ms-font-feature-settings:tnum;-webkit-font-feature-settings:tnum;padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}</style><link href="//fonts.googleapis.com/css?family=Montserrat:700|Merriweather:400,400i,700,700i,900,900i" rel="stylesheet" type="text/css"/><style>.markdown pre{display:block;background:#3f3f3f;color:#dcdcdc;overflow-y:hidden}.markdown pre code{background:none;border:none;border-radius:3px;display:inline-block;overflow:inherit;padding:1.58333rem;white-space:inherit;word-wrap:normal}code{border-radius:3px;white-space:pre;white-space:pre-wrap;white-space:pre-line;white-space:-pre-wrap;white-space:-o-pre-wrap;white-space:-moz-pre-wrap;white-space:-hp-pre-wrap;word-wrap:break-word;background:#e5e5e5;border:1px solid #ccc;display:inline;font-family:Inconsolata,monospace,serif;max-width:100%;overflow:auto;padding:0 .1625rem}.clojure .hljs-attribute,.css .hljs-class,.css .hljs-id,.hljs-keyword,.hljs-request,.hljs-status,.hljs-tag,.lisp .hljs-title,.nginx .hljs-title{color:#e3ceab}.django .hljs-filter .hljs-argument,.django .hljs-template_tag,.django .hljs-variable{color:#dcdcdc}.hljs-date,.hljs-number{color:#8cd0d3}.apache .hljs-sqbracket,.dos .hljs-envvar,.dos .hljs-stream,.hljs-variable{color:#efdcbc}.diff .hljs-change,.dos .hljs-flow,.hljs-literal,.python .exception,.python .hljs-built_in,.tex .hljs-special{color:#efefaf}.diff .hljs-chunk,.hljs-subst{color:#8f8f8f}.apache .hljs-tag,.diff .hljs-header,.dos .hljs-keyword,.haskell .hljs-type,.hljs-prompt,.hljs-title,.nginx .hljs-built_in,.python .hljs-decorator,.ruby .hljs-class .hljs-parent,.tex .hljs-command{color:#efef8f}.dos .hljs-winutils,.ruby .hljs-string,.ruby .hljs-symbol,.ruby .hljs-symbol .hljs-string{color:#dca3a3}.apache .hljs-cbracket,.coffeescript .hljs-attribute,.css .hljs-rules .hljs-value,.diff .hljs-deletion,.hljs-attr_selector,.hljs-built_in,.hljs-javadoc,.hljs-pragma,.hljs-preprocessor,.hljs-pseudo,.hljs-string,.hljs-tag .hljs-value,.smalltalk .hljs-array,.smalltalk .hljs-class,.smalltalk .hljs-localvars,.sql .hljs-aggregate,.tex .hljs-formula{color:#cc9393}.diff .hljs-addition,.hljs-comment,.hljs-doctype,.hljs-pi,.hljs-shebang,.hljs-template_comment,.java .hljs-annotation{color:#7f9f7f}.coffeescript .javascript,.javascript .xml,.tex .hljs-formula,.xml .css,.xml .hljs-cdata,.xml .javascript,.xml .vbscript{opacity:.5}</style></head><body><div id="react-mount"><div style="max-width:42rem;margin-left:auto;margin-right:auto;padding:2.625rem 1.3125rem;" data-reactroot="" data-reactid="1" data-react-checksum="2084420195"><h3 style="font-family:Montserrat, sans-serif;margin-top:0;" data-reactid="2"><a style="box-shadow:none;text-decoration:none;color:inherit;" href="/blog/" data-reactid="3">PB</a></h3><div class="markdown" data-reactid="4"><!-- react-empty: 5 --><h1 style="margin-top:0;" data-reactid="6">LINQ - O que realmente é</h1><div data-reactid="7"><h1>Introdução</h1>
+<p>Vamos começar a primeira parte da série sobre <strong>LINQ</strong> falando sobre o que é a linguagem criada pela Microsoft para seleção de dados a partir de coleções.</p>
+<h1>Origens do LINQ</h1>
+<p>O <strong>LINQ</strong> (<strong>L</strong>anguage <strong>IN</strong>tegrated <strong>Q</strong>uery – Consulta Integrada à Linguagem) foi introduzido na plataforma .NET versão 3.5 a fim de tornar-se uma linguagem capaz de fornecer uma interface padrão para consultas a qualquer coleção, desde simples <code>Array</code>s e <code>List&lt;&gt;</code>s até objetos manipulados por componentes como a <a href="http://msdn.microsoft.com/en-us/data/ef.aspx">Entity Framework</a> que podem por sua vez gerar consultas traduzidas para outras linguagens como SQL.</p>
+<p>Em outros blogs é possível ver exemplos e aprender a utilização básica dessa linguagem. O objetivo desta série é fazer com que você possa saber um pouco melhor como esse esse recurso realmente funciona e foi implementado, e portanto como utilizá-lo de maneira rápida e com segurança.</p>
+<h1>Sintaxe de Consulta vs Sintaxe de Método</h1>
+<p>As duas sintaxes para a utilização do LINQ são equivalentes, porém algumas operações podem ser mais simples ou elegantes de se implementar utilizando uma delas.</p>
+<p>O compilador do C# converte ambas ao mesmo resultado (equivalente à sintaxe de método, conforme veremos a seguir), portanto a escolha muitas vezes se resume a estilística.</p>
+<h2>Sintaxe de Método (Method Syntax)</h2>
+<p>A <strong>Sintaxe de Método</strong> involve a utilização dos Métodos de Extensão disponibilizados em <code>System.Linq</code>, como <code>IEnumerable&lt;T&gt;.Where()</code>:</p>
+<pre><code class="language-csharp"><span class="hljs-keyword">using</span> System.Linq;
+
+<span class="hljs-comment">// ...</span>
+
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">HasLinqExtensions</span>(<span class="hljs-params"></span>)
+</span>{
+  <span class="hljs-keyword">int</span>[] arr = { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span> };
+  IEnumerable&lt;<span class="hljs-keyword">int</span>&gt; enumerable = arr;
+
+  <span class="hljs-comment">// =&gt; IEnumerable contendo { 1, 2, 3 };</span>
+  <span class="hljs-keyword">var</span> result = enumerable.Where(i =&gt; i &lt; <span class="hljs-number">4</span>);
+}
+</code></pre>
+<p>Esse exemplo também utiliza <a href="http://msdn.microsoft.com/en-us/library/vstudio/bb397687.aspx">lambda expressions</a>, que são essencialmente uma maneira curta de criar uma função anônima, possibilitando uma sintaxe limpa para programação similar à de linguagens funcionais.</p>
+<p>A construção de queries complexas é feita através de chamadas em corrente. As expressões são avaliadas preguiçosamente (de maneira <em>lazy</em>), ou seja, somente quando necessário:</p>
+<pre><code class="language-csharp"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">BuildComplexQuery</span>(<span class="hljs-params"></span>)
+</span>{
+  <span class="hljs-keyword">string</span>[] arr = { <span class="hljs-string">"Alice"</span>, <span class="hljs-string">"Bob"</span>, <span class="hljs-string">"Charlie"</span> };
+
+  <span class="hljs-keyword">var</span> result = arr.Where(s =&gt; !s.StartsWith(<span class="hljs-string">"A"</span>))
+    .Where(s =&gt; s.Length &lt; <span class="hljs-number">5</span>)
+    .Select(s =&gt; <span class="hljs-keyword">new</span> { Name = s });
+
+  <span class="hljs-comment">// avalia o proximo item somente a cada iteracao</span>
+  <span class="hljs-keyword">foreach</span> (<span class="hljs-keyword">var</span> item <span class="hljs-keyword">in</span> result)
+  {
+    Console.WriteLine(item.Name);
+  }
+
+  Assert.AreEqual(<span class="hljs-string">"Bob"</span>, result.First().Name)
+
+</code></pre>
+<h2>Sintaxe de Consulta (Query Syntax)</h2>
+<p>A <strong>Sintaxe de Consulta</strong> é nova sintaxe implementada pelo C# que possibilita a manipulação de consultas como se fossem <strong>cidadãos de primeira classe</strong> da linguagem, isso quer dizer, como se fossem outras construções nativas da linguagem como instâncias de classes e tipos de valor.</p>
+<p>A seguir está o primeiro exemplo acima reescrito na sintaxe de consulta:</p>
+<pre><code class="language-csharp"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">QuerySyntax</span>(<span class="hljs-params"></span>)
+</span>{
+  <span class="hljs-keyword">int</span>[] arr = { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span> };
+  IEnumerable&lt;<span class="hljs-keyword">int</span>&gt; enumerable = arr;
+
+  <span class="hljs-keyword">var</span> result = <span class="hljs-keyword">from</span> i <span class="hljs-keyword">in</span> enumerable
+         <span class="hljs-keyword">where</span> i &lt; <span class="hljs-number">4</span>
+         <span class="hljs-keyword">select</span> i;
+}
+</code></pre>
+<h3>Duck Typing</h3>
+<p>Como a sintaxe de consulta não é nada além de uma maneira diferente de executar os métodos definidos pelo LINQ, o compilador C# simplesmente substitui as palavras chave por chamadas a métodos com os nomes correspondentes (<code>Where()</code>, <code>Select</code>, etc.), sem necessariamente estes vindo de <code>Sistem.Linq</code>. Por se tratarem de métodos de extensão, o compilador não tem como fazer essa confirmação.</p>
+<p>E é aqui que começamos a ver melhor como o LINQ funciona <em>under the hood</em>, pois caso sua classe exponha um método com o mesmo nome de alguma outra forma ele será chamado no lugar do método LINQ:</p>
+<pre><code class="language-csharp">class LinqFooler : List&lt;int&gt;
+{
+  public LinqFooler(IEnumerable&lt;int&gt; collection)
+    :base(collection) {}
+
+  public IEnumerable&lt;int&gt; Where(Func&lt;int, bool&gt; filter)
+  {
+    Console.WriteLine("Haha");
+    return null;
+  }
+}
+
+// ...
+
+[TestMethod]
+[ExpectedException(typeof(ArgumentNullException))]
+public void QuerySyntaxWorksByDuckTyping()
+{
+  LinqFooler fooler = new LinqFooler(new int[] { 1, 2, 3, 4, 5 });
+  var result = from i in fooler
+         where i &lt; 4
+         select i;
+  Assert.AreEqual(null, result);
+  Assert.AreEqual(5, fooler.Count()); // outros metodos nao sao afetados
+  result.Count(); // atira ArgumentNullException, Count() recebe null de result.Where()
+}
+</code></pre>
+<p>Não se preocupe em entender o parâmetro <span class="highlight"><code class="csharp">Func&lt;int, bool&gt; filter</code></span> por enquanto, abordaremos melhor como implementar nossos próprios métodos em outro post. O importante é perceber que de fato o compilador simplesmente gerou uma chamada equivalente a <span class="highlight"><code class="csharp">fooler.Where(i =&gt; i &lt; 4)</code></span>, que resolveu para o método <code>LinqFooler#Where</code>.</p>
+<p>Isso é comum em linguagens fracamente tipadas e é chamado <em>duck typing</em>, que é o polimorfismo resultante da resolução da chamada de métodos baseado somente em seus nomes e assinaturas, sem a necessidade de herdar de uma mesma classe base ou implementar uma mesma interface, como é o caso do <strong>C#</strong>.</p>
+<h1>Extension Methods</h1>
+<p>Finalmente, outro novo recurso criado justamente para que fosse possível a existência do <strong>LINQ</strong> foram os <strong>Extension Methods</strong>, ou <strong>Métodos de Extensão</strong>, que possibilitam “adicionar” métodos a uma classe de forma transparente.</p>
+<p>Eles atendem ao caso de uso comum de criar um médodo estático para interagir com determinada classe sem modificá-la internamente, quando muitas vezes o desejo do programador seria mesmo o de modificar a classe.</p>
+<pre><code class="language-csharp"><span class="hljs-keyword">class</span> <span class="hljs-title">MinhaClasse</span>
+{
+  <span class="hljs-keyword">protected</span> <span class="hljs-keyword">int</span> innerVar; <span class="hljs-comment">// Invisivel para outras classes</span>
+  <span class="hljs-keyword">internal</span> <span class="hljs-keyword">int</span> outerVar; <span class="hljs-comment">// Visivel para outras classes da mesma assembly</span>
+}
+
+<span class="hljs-keyword">static</span> <span class="hljs-keyword">class</span> <span class="hljs-title">MinhaClasseExtensao</span>
+{
+  <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Extensao</span>(<span class="hljs-params"><span class="hljs-keyword">this</span> MinhaClasse target, <span class="hljs-keyword">int</span> sum</span>)
+  </span>{
+    target.outerVar += sum;
+  }
+}
+
+[TestClass]
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">TestClass</span>
+{
+  [TestMethod]
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">TestMethod</span>(<span class="hljs-params"></span>)
+  </span>{
+    MinhaClasse m = <span class="hljs-keyword">new</span> MinhaClasse();
+    m.outerVar = <span class="hljs-number">2</span>;
+    m.Extensao(<span class="hljs-number">5</span>);
+    Assert.AreEqual(<span class="hljs-number">7</span>, m.outerVar);
+  }
+}
+</code></pre>
+<p>Foi exatamente esse mesmo o cenário enfrentado pelo pessoal da .NET, eles tinham que ampliar as funcionalidades de interfaces antigas (<code>IEnumerable&lt;&gt;</code>, <code>ICollection&lt;&gt;</code>, <code>IList&lt;&gt;</code>, etc.) mantendo a retro-compatibilidade e sem alterar o código das implementações existentes.</p>
+</div><em style="display:block;margin-bottom:3.5rem;" data-reactid="8"><!-- react-text: 9 -->Posted <!-- /react-text --><!-- react-text: 10 -->July 23, 2013<!-- /react-text --></em><hr style="margin-bottom:3.5rem;" data-reactid="11"/><noscript data-reactid="12"></noscript><p style="margin-bottom:4.375rem;" data-reactid="13"><!-- react-text: 14 -->Written by <!-- /react-text --><strong data-reactid="15">Paolo Bueno</strong><!-- react-text: 16 -->, a Brazilian based in São Paulo, working as a software engineer at <!-- /react-text --><a href="https://www.redhat.com" data-reactid="17">Red Hat</a><!-- react-text: 18 -->.<!-- /react-text --></p></div><span style="display:block;clear:both;" data-reactid="19"> </span></div></div><script src="/blog/bundle.js?t=1486607736216"></script></body></html>
