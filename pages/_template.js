@@ -14,14 +14,14 @@ class Template extends React.Component {
           style={{
             ...scale(1.5),
             marginBottom: rhythm(1.2),
-            marginTop: 0,
+            marginTop: 0
           }}
         >
           <Link
             style={{
               boxShadow: 'none',
               textDecoration: 'none',
-              color: 'inherit',
+              color: 'inherit'
             }}
             to={'/'}
           >
@@ -34,14 +34,14 @@ class Template extends React.Component {
         <h3
           style={{
             fontFamily: 'Montserrat, sans-serif',
-            marginTop: 0,
+            marginTop: 0
           }}
         >
           <Link
             style={{
               boxShadow: 'none',
               textDecoration: 'none',
-              color: 'inherit',
+              color: 'inherit'
             }}
             to={'/'}
           >
@@ -54,7 +54,7 @@ class Template extends React.Component {
       <Container
         style={{
           maxWidth: rhythm(24),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`
         }}
       >
         {header}

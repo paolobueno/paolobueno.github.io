@@ -30,7 +30,7 @@ class ReadNext extends React.Component {
             style={{
               ...scale(-0.5),
               margin: 0,
-              letterSpacing: -0.25,
+              letterSpacing: -0.25
             }}
           >
             READ THIS NEXT:
@@ -38,15 +38,15 @@ class ReadNext extends React.Component {
           <h3
             style={{
               marginTop: 0,
-              marginBottom: rhythm(1/4),
+              marginBottom: rhythm(1 / 4)
             }}
           >
             <Link
               to={{
                 pathname: nextPost.path,
                 query: {
-                  readNext: true,
-                },
+                  readNext: true
+                }
               }}
             >
               {nextPost.data.title}
@@ -62,7 +62,7 @@ class ReadNext extends React.Component {
 
 ReadNext.propTypes = {
   post: React.PropTypes.object.isRequired,
-  pages: React.PropTypes.array,
+  pages: React.PropTypes.array
 }
 
 export default ReadNext

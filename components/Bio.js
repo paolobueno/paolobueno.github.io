@@ -7,10 +7,10 @@ class Bio extends React.Component {
     return (
       <p
         style={{
-          marginBottom: rhythm(2.5),
+          marginBottom: rhythm(2.5)
         }}
       >
-        Written by <strong>{config.authorName}</strong>, a Brazilian based in São Paulo, working as a software engineer at <a href="https://www.redhat.com">Red Hat</a>.
+        Written by <strong>{config.authorName}</strong>, a Brazilian based in São Paulo, working as a software engineer at <a href='https://www.redhat.com'>Red Hat</a>.
       </p>
     )
   }

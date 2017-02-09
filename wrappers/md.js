@@ -1,6 +1,6 @@
 import React from 'react'
 import moment from 'moment'
-import Helmet from "react-helmet"
+import Helmet from 'react-helmet'
 import ReadNext from '../components/ReadNext'
 import { rhythm } from 'utils/typography'
 import { config } from 'config'
@@ -14,7 +14,7 @@ class MarkdownWrapper extends React.Component {
     const post = route.page.data
 
     return (
-      <div className="markdown">
+      <div className='markdown'>
         <Helmet
           title={`${post.title} | ${config.blogTitle}`}
         />
@@ -23,14 +23,14 @@ class MarkdownWrapper extends React.Component {
         <em
           style={{
             display: 'block',
-            marginBottom: rhythm(2),
+            marginBottom: rhythm(2)
           }}
         >
           Posted {moment(post.date).format('MMMM D, YYYY')}
         </em>
         <hr
           style={{
-            marginBottom: rhythm(2),
+            marginBottom: rhythm(2)
           }}
         />
         <ReadNext post={post} pages={route.pages} />
@@ -41,7 +41,7 @@ class MarkdownWrapper extends React.Component {
 }
 
 MarkdownWrapper.propTypes = {
-  route: React.PropTypes.object,
+  route: React.PropTypes.object
 }
 
 export default MarkdownWrapper
