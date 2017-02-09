@@ -1,5 +1,5 @@
 import React from 'react'
-import Helmet from "react-helmet"
+import Helmet from 'react-helmet'
 import { GoogleFont, TypographyStyle } from 'react-typography'
 import typography from './utils/typography'
 
@@ -8,11 +8,11 @@ const BUILD_TIME = new Date().getTime()
 module.exports = React.createClass({
   displayName: 'HTML',
   propTypes: {
-    body: React.PropTypes.string,
+    body: React.PropTypes.string
   },
   render () {
     const { body } = this.props
-    const head = Helmet.rewind();
+    const head = Helmet.rewind()
 
     let css
     if (process.env.NODE_ENV === 'production') {
@@ -40,5 +40,5 @@ module.exports = React.createClass({
         </body>
       </html>
     )
-  },
+  }
 })

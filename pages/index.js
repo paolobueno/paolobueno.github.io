@@ -3,7 +3,7 @@ import { Link } from 'react-router'
 import sortBy from 'lodash/sortBy'
 import get from 'lodash/get'
 import { rhythm, scale } from 'utils/typography'
-import Helmet from "react-helmet"
+import Helmet from 'react-helmet'
 import { config } from 'config'
 import include from 'underscore.string/include'
 import Bio from 'components/Bio'
@@ -22,25 +22,25 @@ class BlogIndex extends React.Component {
           title={config.blogTitle}
           meta={[
             {"name": "description", "content": "Paolo Bueno's developer blog"},
-            {"name": "keywords", "content": "blog, articles, technology"},
+            {"name": "keywords", "content": "blog, articles, technology"}
           ]}
         />
         <Bio />
         <ul>
           {visiblePages.map((page) => (
-              <li
-                key={page.path}
-                style={{
-                    marginBottom: rhythm(1/4),
-                }}
-              >
-                <p style={{marginBottom: rhythm(1/16)}}>
-                  <Link style={{boxShadow: 'none'}} to={page.path}>
-                      {get(page, 'data.title', page.path)}
-                  </Link>
-                </p>
-                <p style={{...scale(-0.4)}}>{page.data.tagline}</p>
-              </li>
+            <li
+              key={page.path}
+              style={{
+                marginBottom: rhythm(1 / 4)
+              }}
+            >
+              <p style={{marginBottom: rhythm(1 / 16)}}>
+                <Link style={{boxShadow: 'none'}} to={page.path}>
+                  {get(page, 'data.title', page.path)}
+                </Link>
+              </p>
+              <p style={{...scale(-0.4)}}>{page.data.tagline}</p>
+            </li>
           ))}
         </ul>
       </div>
@@ -49,7 +49,7 @@ class BlogIndex extends React.Component {
 }
 
 BlogIndex.propTypes = {
-  route: React.PropTypes.object,
+  route: React.PropTypes.object
 }
 
 export default BlogIndex
