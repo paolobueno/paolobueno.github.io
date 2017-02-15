@@ -1,7 +1,7 @@
 ---
 tagline: "O under-the-hood do componente para consultas da plataforma .NET"
-tags: [linq, entity framework, extension methods, avançado]
-lang: pt-br
+tags: [linq, entity framework, extension methods, advanced]
+lang: pt-BR
 title: "LINQ - O que realmente é"
 date: "2013-07-23"
 ---
