@@ -51,7 +51,9 @@ In addition to the lovely duck typing, it is very common for libraries to be con
 
 TypeScript can easily come to your aid by not only allowing you to describe each option through [JSDoc](http://usejsdoc.org/) annnotations, but also going further into any functions and callback parameters:
 
+![Intellisense picking up definitions from an interface for an options parameter](./tsannotations.png)
 
+In the above image, by defining an `interface` with the possible contents of the options parameter, the IDE can pick up its definition and JSDoc captions.
 
 ### Our Target is JS
 
