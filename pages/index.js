@@ -7,6 +7,14 @@ import Helmet from 'react-helmet'
 import { config } from 'config'
 import include from 'underscore.string/include'
 import Bio from 'components/Bio'
+import { prefixLink } from 'gatsby-helpers'
+import ptBrFlag from '../images/flags/br.png'
+import enFlag from '../images/flags/gb.png'
+
+const langFlags = {
+  'pt-BR': ptBrFlag,
+  'en': enFlag
+}
 
 class BlogIndex extends React.Component {
   render () {
@@ -16,6 +24,17 @@ class BlogIndex extends React.Component {
     const visiblePages = sortedPages.filter(page => (
       get(page, 'file.ext') === 'md' && !include(page.path, '/404') || get(page, 'data.date')
     ))
+
+    function liStyle (page) {
+      const style = {
+        marginBottom: rhythm(1 / 4)
+      }
+      const lang = get(page, 'data.lang')
+      if (lang) {
+        style.listStyle = `url(${prefixLink(langFlags[lang])})`
+      }
+      return style
+    }
     return (
       <div>
         <Helmet
@@ -30,9 +49,7 @@ class BlogIndex extends React.Component {
           {visiblePages.map((page) => (
             <li
               key={page.path}
-              style={{
-                marginBottom: rhythm(1 / 4)
-              }}
+              style={liStyle(page)}
             >
               <p style={{marginBottom: rhythm(1 / 16)}}>
                 <Link style={{boxShadow: 'none'}} to={page.path}>
