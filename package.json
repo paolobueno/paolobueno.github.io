@@ -25,6 +25,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "develop": "gatsby develop",
     "build": "gatsby build && cp CNAME public/",
-    "deploy": "npm run build && gh-pages -d public -b master"
+    "deploy": "gh-pages -d public -b master"
   }
 }
