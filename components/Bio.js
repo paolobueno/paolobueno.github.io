@@ -10,7 +10,7 @@ class Bio extends React.Component {
           marginBottom: rhythm(2.5)
         }}
       >
-        Written by <strong>{config.authorName}</strong>, a Brazilian based in São Paulo, working as a software engineer at <a href='https://www.redhat.com'>Red Hat</a>.
+        Written by <strong>{config.authorName}</strong>, a Brazilian based on Rotterdam, working as a software engineer at <a href='https://wearereasonablepeople.nl'>WEAREREASONABLEPEOPLE</a>.
       </p>
     )
   }
